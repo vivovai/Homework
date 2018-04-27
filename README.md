@@ -80,3 +80,23 @@ public class SpiralMatrix {
 		}
 	}
 }
+
+####################################################################################################
+
+private static void recursionNumbers(int n)
+    {
+        count++;
+        if (count < 4) {
+            System.out.print(n + " ");
+            recursionNumbers(n * 10);
+        }
+        else if (count == 4) {
+            System.out.print(n + " ");
+            recursionNumbers(n);
+        }
+       
+        else if (count > 4 && count <= 8) {
+            System.out.print(n + " ");
+            recursionNumbers(n / 10);
+        }
+    }
